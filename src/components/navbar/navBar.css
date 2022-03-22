@@ -1,0 +1,19 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links {
+    display:flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    /* height: 150px; */
+}
+
+#logout {
+    display: inline-block;
+}
