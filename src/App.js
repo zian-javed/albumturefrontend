@@ -1,6 +1,6 @@
-
 import './App.css';
 import React from 'react';
+import Spotify from './components/spotifyAPI';
 import MyForm from './components/login/login.js';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
     <div className="App">
       
       <MyForm />
+      <Spotify/>
      
     </div>
   );
