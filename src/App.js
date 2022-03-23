@@ -1,10 +1,12 @@
 import NavBar from './components/navbar/navBar.js';
 import './App.css';
 
-function App() {
+const App = () => {
+  const [user, setUser] = useState();
+
   return (
     <div className="App">
-      <NavBar />
+      <NavBar /> 
       <h1> Final Project </h1>
 
     </div>

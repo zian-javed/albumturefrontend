@@ -4,6 +4,10 @@ nav {
     align-items: center;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .links {
     display:flex;
     flex-direction: column;
@@ -11,7 +15,7 @@ nav {
 
 #logo {
     display: flex;
-    /* height: 150px; */
+    height: 150px;
 }
 
 #logout {

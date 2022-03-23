@@ -4,12 +4,12 @@ import "./navBar.css"
 const NavBar = () =>{
     return(
         <nav>
-            <div className='links'>
-                <h2>Profile Name Here</h2>
+            <ul className='links'>
+                <li>Profile Name Here</li>
                 {/* should link to user profile */}
-                <h2>My Collection</h2>
+                <li>My Collection</li>
                 {/* should link to user collection */}
-            </div>
+            </ul>
 
             <img id='logo' src="images/AlbumtureLogo.png" alt='logo'/>
             {/* logo image link to something? */}
