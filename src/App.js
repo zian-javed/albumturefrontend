@@ -1,18 +1,17 @@
-
 import './App.css';
 import React from 'react';
-
 import Spotify from './components/spotifyAPI';
+import MyForm from './components/login/login.js';
 
-const App = () => {
-
-
-
-
-    return(
-      <>
+function App() {
+  return (
+    <div className="App">
+      
+      <MyForm />
       <Spotify/>
-      </>
-    )
+     
+    </div>
+  );
 }
+
 export default App;
