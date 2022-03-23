@@ -1,12 +1,12 @@
 import React from 'react'
 import "./navBar.css"
 
-const NavBar = () =>{
+const NavBar = (props) =>{
     return(
         <nav>
             <ul className='links'>
-                <li>Profile Name Here</li>
-                {/* should link to user profile */}
+                <li>{props.user}</li>
+                {/* should link to user variable in app.js */}
                 <li>My Collection</li>
                 {/* should link to user collection */}
             </ul>
