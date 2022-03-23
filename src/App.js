@@ -1,18 +1,19 @@
-import { useState } from "react";
-import NavBar from './components/navbar/navBar.js';
+
 import './App.css';
+import React from 'react';
 
+
+import NavBar from './components/navbar/navBar.js';
 const App = () => {
-  // const [user, setUser] = useState();
-  const user = "something"
+  const user = "Desk4"
 
+  
+  
   return (
-    <div className="App">
+    <>
+
       <NavBar user={user} /> 
-      <h1> Final Project </h1>
-
-    </div>
-  );
+    </>
+  )
 }
-
 export default App;
