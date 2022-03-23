@@ -1,13 +1,18 @@
 
 import './App.css';
+import React from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <h1> Final Project </h1>
+import Spotify from './components/spotifyAPI';
 
-    </div>
-  );
+const App = () => {
+
+
+
+
+    return(
+      <>
+      <Spotify/>
+      </>
+    )
 }
-
 export default App;
