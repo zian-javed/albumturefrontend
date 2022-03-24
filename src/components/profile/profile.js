@@ -19,6 +19,7 @@ const Profile = (props) =>{
 
                 <label>password</label> 
                 <input type="password" />
+                <button>Show Password</button>
 
                 <button>Save Changes</button>
             </form>
