@@ -31,9 +31,8 @@ export const Login = ({setUser}) => {
           
           <img src= "images/Menuleft.png" alt="left menu" ></img>
     </div>
-    <div>
 
-      
+    <div>
     <form onSubmit={submitHandler}>
 
         <input 
@@ -70,16 +69,23 @@ export const Login = ({setUser}) => {
 
         <br></br>
 
-        
         <button 
-        onClick={() => setBool(!bool)}>login or Create Account 
+        onClick={() => setBool(!bool)}
+        type="submit">Press to create account
         </button>
 
-        <button 
-        type="submit">Sign Up
+        <label>Already have an account?</label>
+
+         <button 
+        onClick={() => setBool(!bool)}>Log in 
         </button>
+
+
+    
 
         </form>
+
+      
 
       </div>
     </div>
