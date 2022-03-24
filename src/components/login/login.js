@@ -84,9 +84,13 @@ export const Login = ({setUser}) => {
     
 
         </form>
+<<<<<<< HEAD
 
       
 
+=======
+       
+>>>>>>> 542b5f77dfc6d05bea8a1287f8fc62cbdcdb17b3
       </div>
     </div>
   )
