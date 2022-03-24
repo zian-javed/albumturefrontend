@@ -1,14 +1,27 @@
 import { useState } from "react";
+import { createUser, login } from "../../utils"; 
 import './login.css';
 
+export const Login = ({setUser}) => {
+  const [username, setUsername] = useState();
+  const [email, setEmail] = useState();
+  const [pass, setPass] = useState();
+  const [bool, setBool] = useState(false);
 
-const MyForm = () => {
-  const [name, setName] = useState("");
-
-  const handleSubmit = (event) => {
-    event.preventDefault();
-   
+  const submitHandler = (e) => {
+    e.preventDefault();
+    setUser({username: username, email: email, pass: pass});
+    if (bool) {
+      login(username, pass, setUser);
+    } else {
+    if( email && email.includes("@")) {
+    createUser(username, email, pass, setUser);
+   }
   }
+};
+
+
+ 
 
   return (
     <div className="loginpage">
@@ -19,49 +32,57 @@ const MyForm = () => {
           <img src= "images/Menuleft.png" alt="left menu" ></img>
     </div>
     <div>
-    <form onSubmit={handleSubmit}>
+
+      
+    <form onSubmit={submitHandler}>
+
         <input 
-          type="text" 
-          value={name}
-         
-          // onChange={(e) => setName(e.target.value)}
+         onChange={(event) => setUsername(event.target.value)}
         />
+      
        <br></br>
-       <label>username</label> 
-       <br></br>
-    
-
-        <input 
-        type="text" 
-        value={name}
-        
-        // onChange={(e) => setName(e.target.value)}
-        />
-        <br></br>
-        <label>email</label> 
-        <br></br>
-
-
-        <input 
-        type="text" 
-        value={name}
        
-        // onChange={(e) => setName(e.target.value)}
-        />
+       <label>username</label> 
+
+       <br></br>
+      
+    
+      {!bool &&
+        <input 
+        onChange={(event) => setEmail(event.target.value) }
+        type="email"/>}
+        
         <br></br>
+
+        <label>email</label>
+        
+        <br></br>
+
+
+        <input 
+
+        onChange={(event) => setPass(event.target.value) } 
+        type="password" />
+       
+        <br></br>
+
         <label>password</label> 
+
         <br></br>
 
-        <button>Sign Up</button>
-        <button>Login</button>
+        
+        <button 
+        onClick={() => setBool(!bool)}>login or Create Account 
+        </button>
 
+        <button 
+        type="submit">Sign Up
+        </button>
 
-</form>
+        </form>
 
-</div>
-</div>
+      </div>
+    </div>
   )
-}
+};
 
-
-export default MyForm;
