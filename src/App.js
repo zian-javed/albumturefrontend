@@ -5,6 +5,7 @@ import Spotify from './components/spotifyAPI';
 import NavBar from './components/navbar/navBar.js';
 import { Login } from "./components/login/login.js";
 import { tokenLogin } from "./utils";
+import Profile from "./components/profile/profile.js";
 
 
 const App = () => {
@@ -23,6 +24,8 @@ useEffect( () => { tokenLogin (setUser); }, [] );
 
       <Spotify/>
     
+      <Profile/>
+
     </div>
   );
 }
