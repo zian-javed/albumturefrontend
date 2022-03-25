@@ -13,7 +13,7 @@ const NavBar = (props) =>{
                     <Link to="/collectionPage">My Collection</Link>
                 </li>
                 <li>
-                    <Link to="/userProfilePage">My Profile</Link>
+                    <Link to="/profile">My Profile</Link>
                 </li>
                 
             </ul>
