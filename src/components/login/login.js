@@ -1,12 +1,24 @@
 import { useState } from "react";
 import { createUser, login } from "../../utils"; 
+// import { NavBar } from "../navbar/navBar.js";
+//  navBar doesnt load here 
 import './login.css';
+
 
 export const Login = ({setUser}) => {
   const [username, setUsername] = useState();
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
   const [bool, setBool] = useState(false);
+  const [name, setName] = useState('Create an account');
+ 
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    setName("let's get you logged in");
+    setBool(!bool)
+
+  }
 
   const submitHandler = (e) => {
     e.preventDefault();
@@ -15,26 +27,32 @@ export const Login = ({setUser}) => {
       login(username, pass, setUser);
     } else {
     if( email && email.includes("@")) {
-    createUser(username, email, pass, setUser);
+    createUser(username, email, pass, setBool);
    }
   }
 };
-
-
- 
-
   return (
+
     <div className="loginpage">
+
+    {/* {user && <Navigate to="/collectionPage" />} */}
 
 
     <div className="welcome">
+
+          <img src={bool ? "./images/Menuleft.png" : "./images/photo1.png"} alt="left menu" ></img> 
+       
+         
           
-          <img src= "images/Menuleft.png" alt="left menu" ></img>
     </div>
 
     <div>
-    <form onSubmit={submitHandler}>
 
+      <h1> {name} </h1>
+
+       <form onSubmit={submitHandler}>
+
+    
         <input 
          onChange={(event) => setUsername(event.target.value)}
         />
@@ -46,17 +64,20 @@ export const Login = ({setUser}) => {
        <br></br>
       
     
-      {!bool &&
+      {!bool && 
+        <>
         <input 
         onChange={(event) => setEmail(event.target.value) }
-        type="email"/>}
-        
+        type="email"/>
         <br></br>
 
         <label>email</label>
         
         <br></br>
-
+        </>
+        }
+        
+       
 
         <input 
 
@@ -70,27 +91,17 @@ export const Login = ({setUser}) => {
         <br></br>
 
         <button 
-        onClick={() => setBool(!bool)}
-        type="submit">Press to create account
+        type="submit">{!bool ? "Press to create account" : "Login"}
         </button>
-
-        <label>Already have an account?</label>
-
-         <button 
-        onClick={() => setBool(!bool)}>Log in 
-        </button>
-
 
     
 
         </form>
-<<<<<<< HEAD
+        <label>{!bool ? "Already have an account?" : "Don't have an account" }</label>
+        <button 
+        onClick={handleClick}>Click here! 
+        </button>
 
-      
-
-=======
-       
->>>>>>> 542b5f77dfc6d05bea8a1287f8fc62cbdcdb17b3
       </div>
     </div>
   )
