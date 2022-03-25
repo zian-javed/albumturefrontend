@@ -2,15 +2,13 @@ import './App.css';
 import { useState, useEffect } from "react";
 import React from 'react';
 import Spotify from './components/spotifyAPI';
-import NavBar from './components/navbar/navBar.js';
 import { Login } from "./components/login/login.js";
+import UserCollection from './components/collection/collectionPage';
+import UserContent from './components/userPage/userPage';
+import AddToList from './components/addToList/addToListPage';
+import Profile from './components/profile/profile';
 import { tokenLogin } from "./utils";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Landing } from "./components/landing/landingPage";
-import { NewUser } from './components/newUser/newUserPage';
-import { ExistingUser } from './components/existingUser/existingUserPage';
-import { UserProfile } from './components/userProfile/userProfilePage';
-import { UserCollection } from './components/collection/collectionPage';
 
 
 
@@ -24,7 +22,7 @@ useEffect( () => { tokenLogin (setUser); }, [] );
     <div className="App">
       
       <BrowserRouter>
-      <NavBar user={user} /> 
+      {/* <NavBar user={user} />  */}
 
       {/* {!user ? <Login setUser = {setUser} /> : <Login />} */}
 
@@ -32,11 +30,10 @@ useEffect( () => { tokenLogin (setUser); }, [] );
 
       <Routes>
         <Route path='/' element={!user ? <Login setUser = {setUser} /> : <Login />} />
-        <Route path="/landingPage" element={<Landing />} />
-        <Route path="/newUserPage" element={<NewUser />} />
-        <Route path="/existingUserPage" element={<ExistingUser />} />
-        <Route path="/UserProfilePage" element={<UserProfile />} />
         <Route path="/collectionPage" element={<UserCollection />} />
+        <Route path="/userPage" element={<UserContent />} />
+        <Route path="/addToListPage" element={<AddToList />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
     
