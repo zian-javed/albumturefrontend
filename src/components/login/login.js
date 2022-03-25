@@ -40,7 +40,7 @@ export const Login = ({setUser}) => {
 
     <div className="welcome">
 
-          <img src={bool ? "./images/Menuleft.png" : "./images/photo1.png"} alt="left menu" ></img> 
+          <img src={bool ? "./images/photo3.png" : "./images/photo1.png"} alt="left menu" ></img> 
        
          
           
