@@ -11,13 +11,14 @@
 
 
 .welcome{
-    justify-content: flex-start;
+    display: flex;
+   border: 2px solid rgb(250, 245, 245);
+   border-radius: 20px;
    
 
 }
 
-
-
+  
 
 /* right side of the login page bellow */
 
@@ -25,8 +26,8 @@ form {
  /* border: solid black 2px; */
  display: flex;
  flex-direction: column; 
- width: 20vw;  
- height: 60vh;
+ width: 40vw;  
+ height: 40vh;
 
 
 background-color:#f6f4f1;
@@ -40,9 +41,7 @@ input{
   
   input[type=text] {
    background-color: #b29e84;
-   height: 3vh;
-   
-   
+   height: 3vh; 
   
   }
 
