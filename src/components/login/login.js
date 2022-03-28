@@ -31,32 +31,36 @@ export const Login = ({user, setUser}) => {
     <div className="loginpage">
 
     <div className="welcome">
-          <img src={bool ? "./images/Menuleft.png" : "./images/photo1.png"} alt="left menu" ></img>      
+          <img src={bool ? "./images/photo4.png" : "./images/photo1.png"} alt="left menu" ></img>      
     </div>
 
     <div>
-      <h1> {name} </h1>
+
+      <div className="logText"><h1> {name} </h1> </div>
       {user && <Navigate to="/collectionPage" />}
       <form onSubmit={submitHandler}>
-          <input onChange={(event) => setUsername(event.target.value)} />
+          <input onChange={(event) => setUsername(event.target.value)}
+          placeholder = "  username " />
         <br></br> 
 
-        <label>username</label> 
+        {/* <label>username</label>  */}
 
         <br></br>
         
         {!bool && 
           <>
-          <input onChange={(event) => setEmail(event.target.value) } type="email"/>
+          <input onChange={(event) => setEmail(event.target.value) } type="email"
+          placeholder = "  email "/>
           <br></br>
-          <label>email</label>
+          {/* <label>email</label> */}
           <br></br>
           </>
           }
           
-          <input onChange={(event) => setPass(event.target.value) } type="password" />
+          <input onChange={(event) => setPass(event.target.value) } type="password"
+          placeholder = "  password " />
           <br></br>
-          <label>password</label> 
+          {/* <label>password</label>  */}
           <br></br>
           <button type="submit">{!bool ? "Press to create account" : "Login"} </button>
         </form>
