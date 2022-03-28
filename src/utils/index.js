@@ -13,7 +13,9 @@ export const createUser = async (username, email, pass, setter) => {
         });
     
         const data = await response.json();
-        setter(data.user);
+        if ( data.user ){ 
+            setter(true)
+        }
         localStorage.setItem("myToken", data.token);
     
         } catch (error) {

@@ -3,48 +3,49 @@
 .loginpage{
     border: solid black 3px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
     width: 100%;
     height: 100%;
-
-}
-
-
-.welcome{
-    justify-content: flex-start;
-   
+    background-color:#D6CFCB;
 
 }
 
 
 
+.leftphoto{
+    width: 100%;
+    padding:0%;
+
+
+}
+
+  
 
 /* right side of the login page bellow */
 
 form {
  /* border: solid black 2px; */
  display: flex;
- flex-direction: column; 
- width: 20vw;  
- height: 60vh;
+ flex-direction: column;
+ /* justify-content: center;  */
+ width: 100%;  
+ height: 35%;
+ padding: 10%;
 
 
-background-color:#f6f4f1;
+
+background-color:#D6CFCB;
 }
 input{
     
     border:none ;
-    box-shadow: 6px 5px 2px #7c898b;
+    box-shadow: 10px 10px 2px #706677;
+    /* background-color: #FFB4A2; */
+    background-color: #FFBF69;
+    font-size:40px;
+    
 }
-
-  
-  input[type=text] {
-   background-color: #b29e84;
-   height: 3vh;
-   
-   
-  
-  }
 
 
 
@@ -58,12 +59,23 @@ input{
       color: white;
       border-radius: 12px;
       border: none;
+
+      width: 100px;
       
       text-align: center;
       text-decoration: none;
-      display: inline-block;
+     
+      
       font-size: 16px;
       
     } 
 
+    .logText{
+        display: flex;
+        flex: wrap;
+        padding-left: 25%;
+        margin: 0%;
+        color: white;
+        font-size: 28px;
+    }
       
