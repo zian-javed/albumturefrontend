@@ -8,11 +8,11 @@ export const Login = ({user, setUser}) => {
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
   const [bool, setBool] = useState(false);
-  const [name, setName] = useState('Create an account');
+  const [name, setName] = useState('Create an account.');
  
   const handleClick = (e) => {
     e.preventDefault();
-    setName("let's get you logged in");
+    setName("Let's get you logged in.");
     setBool(!bool)
   }
 
@@ -37,8 +37,10 @@ export const Login = ({user, setUser}) => {
     <div>
 
       <div className="logText"><h1> {name} </h1> </div>
+
       {user && <Navigate to="/collectionPage" />}
-      <form onSubmit={submitHandler}>
+
+      <form className="formlog" onSubmit={submitHandler}>
           <input onChange={(event) => setUsername(event.target.value)}
           placeholder = "  username " />
         <br></br> 
@@ -62,12 +64,17 @@ export const Login = ({user, setUser}) => {
           <br></br>
           {/* <label>password</label>  */}
           <br></br>
-          <button type="submit">{!bool ? "Press to create account" : "Login"} </button>
+          <button type= "submit" >{!bool ? " Press to create account " : "Login"} </button>
+          <br></br>
+          <br></br>
         </form>
 
-        <label>{!bool ? "Already have an account?" : "Don't have an account" }</label>
+       
 
-        <button onClick={handleClick}>Click here! </button>
+        <label className="label">{!bool ? " Already have an account? " : " Don't have an account?  " } </label>
+
+        <button onClick={handleClick}> Click here! </button>
+
 
       </div>
     </div>

@@ -24,9 +24,9 @@ useEffect( () => { tokenLogin (setUser); }, [] );
       <BrowserRouter>
       {/* <NavBar user={user} />  */}
 
-      {/* {!user ? <Login setUser = {setUser} /> : <Login />} */}
+      {!user ? <Login setUser = {setUser} /> : <Login />}
 
-      {/* <Spotify/> */}
+      <Spotify/>
 
       <Routes>
         <Route path='/' element={!user ? <Login setUser = {setUser} /> : <Login />} />
