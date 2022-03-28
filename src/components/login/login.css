@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+/* font-family: 'Space Grotesk', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
 
 /* left side of the login page */
+
 .loginpage{
     border: solid black 3px;
     display: flex;
-    /* justify-content: space-around; */
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
@@ -15,33 +20,25 @@
 
 .leftphoto{
     width: 100%;
-    padding:0%;
-
-
+    padding:0%;    
 }
 
   
 
 /* right side of the login page bellow */
 
-form {
- /* border: solid black 2px; */
+.formLog {
  display: flex;
  flex-direction: column;
- /* justify-content: center;  */
  width: 100%;  
  height: 35%;
  padding: 10%;
-
-
-
 background-color:#D6CFCB;
 }
-input{
+.formlog input{
     
     border:none ;
     box-shadow: 10px 10px 2px #706677;
-    /* background-color: #FFB4A2; */
     background-color: #FFBF69;
     font-size:40px;
     
@@ -75,7 +72,12 @@ input{
         flex: wrap;
         padding-left: 25%;
         margin: 0%;
-        color: white;
+        color: rgb(255, 255, 255);
         font-size: 28px;
+        font-family: 'Space Grotesk', sans-serif; 
+        
     }
       
+    .label{
+        font-family: 'IBM Plex Sans';
+    }
