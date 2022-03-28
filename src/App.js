@@ -12,6 +12,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 
+
 const App = () => {
   const [user, setUser] = useState();
 
@@ -20,6 +21,15 @@ useEffect( () => { tokenLogin (setUser); }, [] );
  
   return (
     <div className="App">
+
+    
+ 
+      
+
+      
+
+    
+
       
       <BrowserRouter>
       {/* <NavBar user={user} />  */}
@@ -36,6 +46,7 @@ useEffect( () => { tokenLogin (setUser); }, [] );
         <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
+
     
     </div>
   );
