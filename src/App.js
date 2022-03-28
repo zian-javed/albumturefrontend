@@ -7,6 +7,7 @@ import { Login } from "./components/login/login.js";
 import { tokenLogin } from "./utils";
 
 
+
 const App = () => {
   const [user, setUser] = useState();
 
@@ -16,12 +17,12 @@ useEffect( () => { tokenLogin (setUser); }, [] );
   return (
     <div className="App">
     
-      
+{/*       
       <NavBar user={user} /> 
 
-      {!user ? <Login setUser = {setUser} /> : <Login />}
+      {!user ? <Login setUser = {setUser} /> : <Login />} */}
 
-      <Spotify/>
+    
     
     </div>
   );
