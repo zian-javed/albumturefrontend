@@ -18,7 +18,7 @@ export const Login = ({user, setUser}) => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    // setUser({username: username, email: email, pass: pass});
+   
     if (bool) {
       login(username, pass, setUser);
     } else {
@@ -28,7 +28,9 @@ export const Login = ({user, setUser}) => {
   }
 };
   return (
+    
     <div className="loginpage">
+       {/* <NavBar user={user} /> */}
 
     <div className="welcome">
           <img src={bool ? "./images/photo4.png" : "./images/photo1.png"} alt="left menu" ></img>      
@@ -64,7 +66,7 @@ export const Login = ({user, setUser}) => {
           <br></br>
           {/* <label>password</label>  */}
           <br></br>
-          <button type= "submit" >{!bool ? " Press to create account " : "Login"} </button>
+          <button type="submit">{!bool ? " Press to create account " : "Login"} </button>
           <br></br>
           <br></br>
         </form>

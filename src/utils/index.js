@@ -8,7 +8,7 @@ export const createUser = async (username, email, pass, setter) => {
             body: JSON.stringify({
                                 username: username,
                                 email: email,
-                                password: pass
+                                pass: pass
             }),
         });
     
@@ -31,7 +31,7 @@ export const createUser = async (username, email, pass, setter) => {
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({
                     username: username,
-                    password: pass,
+                    pass: pass,
                 }),
             });
                 const data = await response.json();
