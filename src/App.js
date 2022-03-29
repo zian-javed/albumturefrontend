@@ -9,7 +9,8 @@ import AddToList from './components/addToList/addToListPage';
 import Profile from './components/profile/profile';
 import { tokenLogin } from "./utils";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-
+import Spotify from './components/spotifyAPI';
+import NavBar from './components/navbar/navBar';
 
 
 const App = () => {
