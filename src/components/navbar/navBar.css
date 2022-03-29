@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.links {
+    display:flex;
+    flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    height: 150px;
+}
+
+#logout {
+    display: inline-block;
+}
