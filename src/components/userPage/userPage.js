@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 import './userPage.css';
 
-const UserContent = ({user}) => {
+const UserContent = ({user, setUser}) => {
    
     return (
         <>
         <div className='userContent'>
-            <NavBar user={user} />
+            <NavBar user={user} setUser={setUser} />
             <h1> this is the user page </h1>
          
             <Link to="/addToListPage">Let's add more</Link>
