@@ -7,7 +7,6 @@ const EditableUserProfile = ({stored, editCompleteCallback}) => {
     const [pass, setPass] = useState(stored.pass);
 
     function handleSaveClicked() {
-        console.log("Saved");
         editCompleteCallback({username, email, pass});
     }
 

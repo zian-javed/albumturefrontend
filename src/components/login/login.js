@@ -9,7 +9,7 @@ export const Login = ({user, setUser}) => {
   const [pass, setPass] = useState();
   const [bool, setBool] = useState(false);
   const [name, setName] = useState('Create an account.');
-  
+
   const handleClick = (e) => {
     e.preventDefault();
     setName("Let's get you logged in.");

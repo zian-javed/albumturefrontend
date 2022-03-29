@@ -59,13 +59,14 @@ const Profile = ({user}) => {
             <NavBar user={user} />
             { editMode ? 
                 <>
-                    <h1>My Profile</h1>
+                    <h1>Edit Profile</h1>
                     <EditableUserProfile
                         stored={stored}
                         editCompleteCallback={handleEditComplete}
                     />
                 </>
                 : <>
+                    <h1>My Profile</h1>
                     <UserProfile
                         stored={stored}
                         startEditCallback={() => setEditMode(true)}
