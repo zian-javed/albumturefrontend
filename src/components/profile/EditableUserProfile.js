@@ -16,7 +16,9 @@ const EditableUserProfile = ({stored, editCompleteCallback}) => {
     }
 
     return (
-        <div className='editProfile'>     
+        <div className='editProfile'>   
+        
+
             <label>User Name:</label>
             <input
                 type='text'
@@ -38,6 +40,7 @@ const EditableUserProfile = ({stored, editCompleteCallback}) => {
 
             <button onClick={handleSaveClicked}>Save</button>
             <button onClick={handleCancelClicked}>Cancel</button>
+            
     </div>
     )
 };

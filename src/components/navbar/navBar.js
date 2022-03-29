@@ -1,10 +1,19 @@
 import React from 'react'
 import "./navBar.css"
-import { Link } from "react-router-dom";
+import { Link , Navigate } from "react-router-dom";
+
 
 
 const NavBar = (props) =>{
+
+    const logOutHandler = () => {
+        props.setUser();
+        localStorage.removeItem("myToken");
+     };
+  
+
     return(
+    
         <nav>
             <ul className='links'>
                 <li>{props.user}</li>
@@ -20,8 +29,10 @@ const NavBar = (props) =>{
 
             <img id='logo' src="images/AlbumtureLogo.png" alt='logo'/>
             {/* logo image link to something? */}
+            
+             {!props.user && <Navigate to="/" />}
 
-            <button id='logout'>Log out</button>
+            <button onClick={logOutHandler}>Log out</button> 
         </nav>
     )
 }

@@ -38,7 +38,7 @@ import EditableUserProfile from '../profile/EditableUserProfile';
 import UserProfile from "../profile/UserProfile";
 import NavBar from '../navbar/navBar.js';
 
-const Profile = ({user}) => {
+const Profile = ({user ,setUser}) => {
     const [editMode, setEditMode] = useState(false);
     const [username, setUsername] = useState();
     const [email, setEmail] = useState();
@@ -56,7 +56,7 @@ const Profile = ({user}) => {
 
     return (
         <div className="profileContainer">
-            <NavBar user={user} />
+            <NavBar user={user} setUser={setUser} />
             { editMode ? 
                 <>
                     <h1>My Profile</h1>
