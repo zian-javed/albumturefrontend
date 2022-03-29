@@ -14,25 +14,33 @@ const NavBar = (props) =>{
 
     return(
     
-        <nav>
-            <ul className='links'>
-                <li>{props.user}</li>
+        <nav className=' navbar'>
+
+            <div id='leftCol'>
+            <ul >
+                <li className='link1'> <Link to="/userPage">{props.user}</Link> </li>
                 {/* should link to user variable in app.js */}
-                <li>
-                    <Link to="/collectionPage">My Collection</Link>
+                <li className='link1'>
+                    <Link id='link2' to="/collectionPage">My Collection</Link>
                 </li>
-                <li>
-                    <Link to="/profile">My Profile</Link>
+
+                <li className='link1'>
+                    <Link id='link2' to="/profile" >My Profile</Link>
                 </li>
                 
             </ul>
+            </div>
 
+            <div id='middleCol'>
             <img id='logo' src="images/AlbumtureLogo.png" alt='logo'/>
-            {/* logo image link to something? */}
-            
-             {!props.user && <Navigate to="/" />}
+            {/* logo image link to something? */} {!props.user && <Navigate to="/" />}
+            </div>
 
-            <button onClick={logOutHandler}>Log out</button> 
+            <div id='lastCol'>
+            <button id='logoutButton' onClick={logOutHandler}>Log out</button> 
+            </div>
+
+
         </nav>
     )
 }
