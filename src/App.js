@@ -24,13 +24,12 @@ useEffect( () => { tokenLogin (setUser); }, [] );
   
       <BrowserRouter>
   
-
       <Routes>
         <Route path='/' element={!user ? <Login user = {user} setUser = {setUser} /> : <Navigate to = "/userPage" />} />
-        <Route path="/collectionPage" element={<UserCollection />} />
-        <Route path="/userPage" element={<UserContent />} />
-        <Route path="/addToListPage" element={<AddToList />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path="/collectionPage" element={<UserCollection  user={user} setUser={setUser} />} />
+        <Route path="/userPage" element={<UserContent  user={user} setUser={setUser}/>} />
+        <Route path="/addToListPage" element={<AddToList  user={user} setUser={setUser}/>} />
+        <Route path="/profile" element={<Profile user={user} setUser={setUser} />} />
       </Routes>
     </BrowserRouter>
 
