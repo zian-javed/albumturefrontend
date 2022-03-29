@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+/* font-family: 'Space Grotesk', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+
+
+/* left side of the login page */
+
+.loginpage{
+    border: solid black 3px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color:#D6CFCB;
+
+}
+
+
+
+.leftphoto{
+    width: 100%;
+    padding:0%;    
+}
+
+  
+
+/* right side of the login page bellow */
+
+.formLog {
+ display: flex;
+ flex-direction: column;
+ width: 100%;  
+ height: 35%;
+ padding: 10%;
+background-color:#D6CFCB;
+}
+.formlog input{
+    
+    border:none ;
+    box-shadow: 10px 10px 2px #706677;
+    background-color: #FFBF69;
+    font-size:40px;
+    
+}
+
+
+
+  /* need to fix buttons not shure how to make the buttons nice */
+
+
+  button {
+      display: flex;
+      display: inline-block;
+      background-color: #555555;
+      color: white;
+      border-radius: 12px;
+      border: none;
+
+      width: 100px;
+      
+      text-align: center;
+      text-decoration: none;
+     
+      
+      font-size: 16px;
+      
+    } 
+
+    .logText{
+        display: flex;
+        flex: wrap;
+        padding-left: 25%;
+        margin: 0%;
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+        font-family: 'Space Grotesk', sans-serif; 
+        
+    }
+      
+    .label{
+        font-family: 'IBM Plex Sans';
+    }
