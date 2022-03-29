@@ -18,7 +18,7 @@ const NavBar = (props) =>{
 
             <div id='leftCol'>
             <ul >
-                <li className='link1'> <Link to="/userPage">{props.user}</Link> </li>
+                <li className='link1'> <Link id='link2' to="/userPage">{props.user}</Link> </li>
                 {/* should link to user variable in app.js */}
                 <li className='link1'>
                     <Link id='link2' to="/collectionPage">My Collection</Link>
