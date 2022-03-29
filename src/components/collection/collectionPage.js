@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 import NavBar from '../navbar/navBar.js';
 
 
-const UserCollection = ({user}) => {
+const UserCollection = ({user, setUser}) => {
    
     return (
         <div className='collection'>
             {!user && <Navigate to="/" />}
-            <NavBar user={user} />
+            <NavBar user={user} setUser={setUser} />
             <h1> collection page content </h1>
             <Link to="/userPage">Add album</Link>
         </div>
