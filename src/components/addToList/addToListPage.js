@@ -1,16 +1,29 @@
 import React from 'react';
-import NavBar from '../navbar/navBar.js';
 import Spotify from '../spotifyAPI.js';
+import { Link } from "react-router-dom";
 
 
-const AddToList = ({user, setUser}) => {
+
+const AddToList = () => {
    
     return (
+        <>
         <div className='list'>
-            <NavBar user={user} setUser={setUser} />
+           
             <h1> add album to your list </h1>
+        
             <Spotify/>
         </div>
+        <div>
+         <ul className='links'>
+        
+        <li>
+             <Link to="/userPage">back to you main page</Link>
+         </li>
+
+         </ul>
+       </div>
+       </>
     );
 };
 
