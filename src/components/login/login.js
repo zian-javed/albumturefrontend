@@ -8,7 +8,7 @@ export const Login = ({user, setUser}) => {
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
   const [bool, setBool] = useState(false);
-  const [name, setName] = useState('Create an account.');
+  const [name, setName] = useState("Let's create an account");
   
   const handleClick = (e) => {
     e.preventDefault();
@@ -30,7 +30,7 @@ export const Login = ({user, setUser}) => {
   return (
     
     <div className="loginpage">
-       {/* <NavBar user={user} /> */}
+     
 
     <div className="welcome">
           <img src={bool ? "./images/photo4.png" : "./images/photo1.png"} alt="left menu" ></img>      
@@ -43,21 +43,22 @@ export const Login = ({user, setUser}) => {
       {user && <Navigate to="/collectionPage" />}
 
       <form className="formlog" onSubmit={submitHandler}>
-          <input onChange={(event) => setUsername(event.target.value)}
+        
+        <input onChange={(event) => setUsername(event.target.value)}
           placeholder = "  username " />
         <br></br> 
-
-        {/* <label>username</label>  */}
-
         <br></br>
+        <br></br>
+        
         
         {!bool && 
           <>
           <input onChange={(event) => setEmail(event.target.value) } type="email"
           placeholder = "  email "/>
           <br></br>
-          {/* <label>email</label> */}
           <br></br>
+          <br></br>
+        
           </>
           }
           
@@ -66,7 +67,10 @@ export const Login = ({user, setUser}) => {
           <br></br>
           {/* <label>password</label>  */}
           <br></br>
-          <button type="submit">{!bool ? " Press to create account " : "Login"} </button>
+          <br></br>
+          <br></br>
+          <button className="logB" type="submit">{!bool ? " Press to create account " : "Login"} </button>
+          <br></br>
           <br></br>
           <br></br>
         </form>
@@ -75,7 +79,7 @@ export const Login = ({user, setUser}) => {
 
         <label className="label">{!bool ? " Already have an account? " : " Don't have an account?  " } </label>
 
-        <button onClick={handleClick}> Click here! </button>
+        <button className="logV" onClick={handleClick}> Click here! </button>
 
 
       </div>
