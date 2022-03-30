@@ -2,25 +2,29 @@
 /* font-family: 'Space Grotesk', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
 /* font-family: 'IBM Plex Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-
+/* font-family: 'Poppins', sans-serif; */
 /* left side of the login page */
 
 .loginpage{
-    border: solid black 3px;
+    /* border: solid black 3px; */
     display: flex;
     flex-wrap: wrap;
     width: 100%;
     height: 100%;
+
     background-color:#D6CFCB;
+    justify-content: center;
+    justify-content: space-around;
 
 }
 
 
 
-.leftphoto{
-    width: 100%;
-    padding:0%;    
+.welcome{
+    box-shadow: 5px 6px 5px rgb(132, 133, 133);
+      
 }
 
   
@@ -33,6 +37,8 @@
  width: 100%;  
  height: 35%;
  padding: 10%;
+ padding-bottom: 10%;
+
 background-color:#D6CFCB;
 }
 .formlog input{
@@ -44,40 +50,101 @@ background-color:#D6CFCB;
     
 }
 
-
-
-  /* need to fix buttons not shure how to make the buttons nice */
-
-
-  button {
-      display: flex;
-      display: inline-block;
-      background-color: #555555;
-      color: white;
-      border-radius: 12px;
-      border: none;
-
-      width: 100px;
-      
-      text-align: center;
-      text-decoration: none;
-     
-      
-      font-size: 16px;
-      
-    } 
-
     .logText{
-        display: flex;
-        flex: wrap;
-        padding-left: 25%;
+        text-align: center;
         margin: 0%;
-        color: rgb(255, 255, 255);
-        font-size: 28px;
-        font-family: 'Space Grotesk', sans-serif; 
+        padding: 15%;
+        color:#565264;
+        font-size: 25px;
+        text-shadow: 3px 3px rgba(250, 246, 246, 0.331);
+        font-family: 'Poppins', sans-serif;
         
     }
       
     .label{
-        font-family: 'IBM Plex Sans';
+        font-family: 'Poppins', sans-serif;
+    }
+
+   
+    /* .logB { */
+        /* display: flex; */
+        /* display: inline-block;
+        background-color: #706677;
+       
+        color: white;
+        border-radius: 12px;
+        border: none;
+        width: 150px;
+        height: 100px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;  
+    }
+
+    .logB:hover{
+        background-color: #A6808C;
+         */
+
+    /* } */
+
+    /* .logV { */
+        /* display: flex; */
+        /* display: inline-block;
+        background-color: #A6808C;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        border-radius: 12px;
+        border: none;
+        width: 100px;
+        height: 70px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;  
+    }
+
+    .logV:hover{
+        background-color: #706677;
+        
+
+    } 
+
+
+    /* button animation bellow */ 
+
+    .logV {
+        display: inline-block;
+        padding: .75rem 1.25rem;
+        border-radius: 10rem;
+        color:white;
+        background-color: #A6808C;
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: .15rem;
+        transition: all .3s;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .logV:hover{
+        background-color: #706677;
+        
+
+    } 
+    .logB{
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color:white;
+    background-color: #A6808C;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    }
+    .logB:hover{
+        background-color: #706677;
     }
