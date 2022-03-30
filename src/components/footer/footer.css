@@ -3,28 +3,31 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap");
 /* font-family: 'IBM Plex Sans', sans-serif; */
 
-body {
-  font-family: "Space Grotesk", sans-serif;
-  background: grey;
-}
-
 footer {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #565264;
+  background: rgba(0, 0, 0, 0);
   position: fixed;
   left: 0;
   bottom: 0;
   right: 0;
-  padding-bottom: 60px;
-  color: rgb(255, 255, 255);
+  padding-bottom: 10px;
   font-size: 28px;
-  font-family: "Space Grotesk", sans-serif;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.15);
+  display: flex;
 }
 
 footer h3 {
   font-size: 15px;
 }
 
+.footer-spotify {
+  display: flex;
+  justify-content: flex-start;
+  margin: 15px;
+}
+
 .footer-list {
-  background: white;
   box-shadow: 0px, 0px, 10px var(--clr-gray200);
   margin: 0;
   padding: 1rem 0;
@@ -38,7 +41,6 @@ footer h3 {
 .footer-list img {
   height: 50px;
   width: 50px;
-  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
 }
 
 .footer-item {
@@ -50,6 +52,11 @@ footer h3 {
   text-decoration: none;
   color: black;
   transition: all 200ms ease-in;
+}
+
+.github {
+  display: flex;
+  align-self: flex-end;
 }
 
 #link-to-team-githubs {
@@ -67,4 +74,12 @@ footer h3 {
 
 .footer-item a:hover {
   color: var(--clr-primary-dark);
+}
+
+#footer-title {
+}
+
+#link-to-spotify img {
+  height: 50px;
+  width: auto;
 }
