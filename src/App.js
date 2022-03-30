@@ -1,4 +1,5 @@
 import './App.css';
+
 import { useState, useEffect } from "react";
 import React from 'react';
 import { Login } from "./components/login/login.js";
@@ -10,8 +11,6 @@ import { tokenLogin } from "./utils";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 
-
-
 const App = () => {
   const [user, setUser] = useState();
 
@@ -20,6 +19,7 @@ useEffect( () => { tokenLogin (setUser); }, [] );
  
   return (
     <div className="App">
+
     
   
       <BrowserRouter>
@@ -34,6 +34,7 @@ useEffect( () => { tokenLogin (setUser); }, [] );
     </BrowserRouter>
 
     
+
     </div>
   );
 }
