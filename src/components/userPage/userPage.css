@@ -1,11 +1,4 @@
-.containerAlbum {
-    display: flex;
-    height: 250px;
-    width: 250px;
-  
-    padding-left: 4%;
-    padding-right: 4%;
-
- 
-    
+.SpotifyArt{
+    width: 10px;  
+    min-height: 10px;
 }

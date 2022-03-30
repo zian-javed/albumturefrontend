@@ -8,13 +8,8 @@ export const Login = ({user, setUser}) => {
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
   const [bool, setBool] = useState(false);
-<<<<<<< HEAD
-  const [name, setName] = useState('Create an account.');
-
-=======
   const [name, setName] = useState("Let's create an account");
   
->>>>>>> 7067565c2e0eac39fa504d876e2ab7d17e05a4b6
   const handleClick = (e) => {
     e.preventDefault();
     setName("Let's get you logged in.");

@@ -1,4 +1,43 @@
+*{
+  box-sizing: border-box;
+}
+
+
 .App {
   text-align: center;
 }
 
+
+@media screen and (max-width: 1400px) {
+  .landing-page {
+      width: 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .landing-text {
+      width: 50%;
+      padding: 0 60px 0 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .landing-page {
+      flex-direction: column-reverse;
+      justify-content: center;
+  }
+  .landing-text {
+      width: 100%;
+      text-align: center;
+      padding: 0 50px;
+  }
+  .landing-text h1 {
+      margin: 10px 0 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .landing-text {
+      padding: 0;
+  }
+}
