@@ -1,75 +1,37 @@
-// import { useState } from "react";
-// import './profile.css';
-
-// const Profile = (props) =>{
-//     return(
-//         <div className="profile">
-//             <div>
-//                 <h1>My Profile</h1>
-
-//                 <button>Edit</button>
-//             </div>
-
-//             <form>
-//                 <label>username</label> 
-//                 <input/>
-
-//                 <label>email</label>
-//                 <input type="email"/>
-
-//                 <label>password</label> 
-//                 <input type="password" />
-//                 <button>Show Password</button>
-
-//                 <button>Save Changes</button>
-//             </form>
-
-//             <button>Delete Account</button>
-
-//         </div>
-//     )
-// };
-
-// export default Profile
-
+import React from 'react'
 import './profile.css';
 import { useState } from 'react';
-import EditableUserProfile from '../profile/EditableUserProfile';
-import UserProfile from "../profile/UserProfile";
 import NavBar from '../navbar/navBar.js';
+import { updatePass, deleteUser } from "../../utils";
 
-const Profile = ({user ,setUser}) => {
+const Profile = ({user , email, pass, setUser}) => {
     const [editMode, setEditMode] = useState(false);
-    const [username, setUsername] = useState();
-    const [email, setEmail] = useState();
-    const [pass, setPass] = useState();
-    const stored = {username, email, pass};
+    const [passUpdate, setPass] = useState();
 
-    function handleEditComplete(result) {
-        if (result != null) {
-            setUsername(result.username);
-            setEmail(result.email);
-            setPass(result.pass);
-        }        
-        setEditMode(false);
-    }
+    const submitHandler = (e) =>{
+        e.preventDefault();
+        updatePass(user, passUpdate)
+        setEditMode(false)
+    };
 
     return (
         <div className="profileContainer">
             <NavBar user={user} setUser={setUser} />
             { editMode ? 
                 <>
-                    <h1>My Profile</h1>
-                    <EditableUserProfile
-                        stored={stored}
-                        editCompleteCallback={handleEditComplete}
-                    />
+                    <form onSubmit={submitHandler}>
+                        <input type="password"  placeholder="Enter New Password"  onChange={(e) => setPass(e.target.value)}/>
+                        <button type="submit" >Update Password</button>
+                    </form>
                 </>
                 : <>
-                    <UserProfile
-                        stored={stored}
-                        startEditCallback={() => setEditMode(true)}
-                    />
+                    <h1>My Profile</h1>
+                    <div className='userProfile'>
+                        <label>User Name: {user} </label>           
+                        <label>Email: {email}</label> 
+                        <button onClick={() => setEditMode(true)}>Edit Password</button>
+                        <button onClick={() => deleteUser(user.id)}>Delete Account</button>
+                    </div>
                 </>
             }            
         </div>
