@@ -47,11 +47,46 @@ export const createUser = async (username, email, pass, setter) => {
             const response = await fetch(`${process.env.REACT_APP_REST_API}user`,{
                 method: "GET",
                 headers: {"Authorization": `Bearer ${localStorage.getItem("myToken")} `},
-            });
+        });
             const data = await response.json();
             setter (data.user);
         } catch (error) {
-        console.log(error)
-            
+            console.log(error)   
         }
     };
+
+    export const updatePass = async (user, passUpdate) => {
+        try {
+            const response = await fetch(`${process.env.REACT_APP_REST_API}user`,{
+                method: "PATCH",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": `Bearer ${localStorage.getItem("myToken")}`,
+            },
+                body: JSON.stringify({
+                    username: user,
+                   pass: passUpdate
+                    })
+                });
+            const data = await response.JSON()
+            if (!data.msg) {
+                throw new Error(data.err)
+            }
+        } catch (error) {
+            console.log()
+        }
+    };
+
+    export const deleteUser = async (id) => {
+        try {
+          const response = await fetch(`${process.env.REACT_APP_REST_API}user/${id}`, {
+            method: "DELETE",
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${localStorage.getItem('myToken')}`,
+            },
+          });
+        } catch (error) {
+          console.log(error)
+        }
+      };
