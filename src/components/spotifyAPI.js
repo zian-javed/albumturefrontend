@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import "./userPage/userPage.css";
 
 
 
@@ -8,7 +9,7 @@ import axios from "axios";
 const Spotify = () => {
     const CLIENT_ID = "0af314e7a1b2419f91d7cd48e6a05a52";
     // const clientSecret = "1cf3bfcdd3934969afacab8ddaa3a663";
-    const REDIRECT_URI = "https://albumture.netlify.app/addToListPage"
+    const REDIRECT_URI = "http://localhost:3000/addToListPage"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
 
@@ -60,8 +61,8 @@ const Spotify = () => {
 
     const renderAlbums = () => {
         return albums.map(album => (
-            <div key={album.id}>
-                {album.images.length ? <img width={"25%"} src= {album.images[0].url} alt=""/> : <div> No Cover Image </div> }
+            <div id="albumcover" key={album.id}>
+                {album.images.length ? <img src= {album.images[0].url} alt=""/> : <div> No Cover Image </div> }
                 {/* Styling Button */}
                     <div style={{ paddingBottom: 20 }}>  
                          <h3>{album.name} </h3>
@@ -112,7 +113,7 @@ const Spotify = () => {
             // {value: 2, name: 'Search by Playlist'},
         ];
     return (
-        <div>
+        <div className="SpotifyArt">
             <select>
             {dataValue.map( (item, idx) => <option key={idx} value={item.value}> {item.name}</option>)}
             </select>
