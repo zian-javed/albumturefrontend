@@ -16,11 +16,11 @@ const UserContent = ({user, setUser}) => {
             <div className='userContent'>
 
                 <div className='leftCol'>
-                <img src='./images/10a.png' alt="Adele" />
+                <img src='./images/13f.png' alt="Adele" />
                 {/* <p> Welcome, friend! {user} </p> */}
                 </div>
                 <div className='rightCol'>
-                <div className="container">
+                <div className="container01">
                 <p className="title">
                     <span className="title-word title-word-1">Welcome </span>
                     <span className="title-word title-word-2"> to</span>
