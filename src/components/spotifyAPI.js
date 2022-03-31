@@ -90,23 +90,23 @@ const Spotify = () => {
 
 
 
-    const Dropdown = () => {
-        // const [selectedValue, setSelectedValue] = useState('');
+    // const Dropdown = () => {
+    //     // const [selectedValue, setSelectedValue] = useState('');
     
-        const dataValue = [
-            {value: 1, name: 'Search by Artist'}
-            // {value: 2, name: 'Search by Playlist'},
-        ];
-    return (
-        <div className="SpotifyArt">
-            <select>
-            {dataValue.map( (item, idx) => <option key={idx} value={item.value}> {item.name}</option>)}
-            </select>
-            {/* <p>{selectedValue}</p> */}
-        </div>
-    )
+    //     const dataValue = [
+    //         {value: 1, name: 'Search by Artist'}
+    //         // {value: 2, name: 'Search by Playlist'},
+    //     ];
+    // return (
+    //     <div className="SpotifyArt">
+    //         <select>
+    //         {dataValue.map( (item, idx) => <option key={idx} value={item.value}> {item.name}</option>)}
+    //         </select>
+    //         {/* <p>{selectedValue}</p> */}
+    //     </div>
+    // )
     
-    }
+    // }
 
 
 

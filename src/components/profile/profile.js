@@ -22,7 +22,7 @@ const Profile = ({user, setUser}) => {
             <NavBar user={user} setUser={setUser} />
             <div className="profileContainer">
                 <div className='profileImage'>
-                    <img src="./images/profile-image.png" alt="profile-image" ></img>
+                    <img src="./images/profile-image.png" ></img>
                 </div>
                 <div className='profileInfo'>   
                     { editMode ? 
