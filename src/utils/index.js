@@ -76,17 +76,3 @@ export const createUser = async (username, email, pass, setter) => {
             console.log()
         }
     };
-
-    export const deleteUser = async (id) => {
-        try {
-          const response = await fetch(`${process.env.REACT_APP_REST_API}user/${id}`, {
-            method: "DELETE",
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${localStorage.getItem('myToken')}`,
-            },
-          });
-        } catch (error) {
-          console.log(error)
-        }
-      };
