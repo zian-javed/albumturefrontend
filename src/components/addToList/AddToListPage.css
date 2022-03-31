@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+h1, h2, h3, p {
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+.list {
+    /* border: black 1px solid; */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#albumImg {
+    margin: 10px;
+    height: 150px;
+    width: 150px;
+    box-shadow: 5px 6px 5px rgb(0, 0, 0);
+}
+
+
+#releaseDate {
+    font-weight: bold;
+    
+}
+
+#albumList{
+    /* border: black 1px solid; */
+    width: 100%;
+    display: flex;
+    margin-bottom: 2px;
+}
+
+#albumInfo {
+    display: flex;
+    border-bottom: black 1px solid;
+    /* border-radius: 5px; */
+    width: 100%;
+    height: 100%;
+    background-color: #457b9dc1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+   
+}
+
+#where{
+    /* border: purple 1px solid; */
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+
+#who{
+    /* border: red 1px solid; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+
+#addButton {
+    box-shadow: 2px 3px 2px #706677;
+    background-color: #FFBF69;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    height: 30px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginButton {
+    
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    /* border: black 1px solid; */
+    border-radius: 5px;
+    height: 50px;
+    width: 350px;
+    justify-content: center;
+    border:none ;
+    box-shadow: 10px 10px 2px #706677;
+    background-color: #43AA8B;
+    font-size:15px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    letter-spacing: 3px;
+
+    background: linear-gradient(
+		100deg,
+		#565264,
+		#706677,
+		#A6808C,
+		#CCB7AE,
+		#D6CFCB
+	);
+	animation: animateBg 1000ms ease infinite alternate;
+	background-size: 100% 2000%;
+}
+.logoutButton {
+    
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    height: 30px;
+    width: 150px;
+    justify-content: center;
+    border:none ;
+    box-shadow: 2px 3px 2px #706677;
+    background-color: #43aa8bb9;
+    font-size:15px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+.SpotifyForm {
+    /* border: black 1px solid; */
+    height: 40px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+#searchBar {
+    height: 30px;
+    width: 320px;
+    background-color: #d6cfcbb6;
+    border-color: #ffcdb252;
+}
+
+#searchButton{
+    box-shadow: 2px 3px 2px #706677;
+    background-color: #FFBF69;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    height: 30px;
+    width: 150px;
+}
+
+
+#loginMessage{
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#goBack{
+    
+    box-shadow: 2px 3px 2px #706677;
+    background-color: #FFBF69;
+    border-radius: 4px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    display: flex;
+    height: 30px;
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+}
+
+
+
+
+/* 
+Adding animation to the title */
+
+.heroText{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 3vw;
+    text-transform: uppercase;
+}
+.heroText-word {
+    animation: color-animation 7s linear infinite;
+  }
+  
+  .heroText-word-1 {
+    --color-1: #E5989B;
+    --color-2: #B5838D;
+    --color-3: #6D6875;
+  }
+  
+  .heroText-word-2 {
+    --color-1:  #6D6875;
+    --color-2:#E5989B;
+    --color-3: #B5838D;
+  }
+  
+  .heroText-word-3 {
+    --color-1:#B5838D;
+    --color-2:  #6D6875;
+    --color-3:#E5989B;
+  }
+  
+  .heroText-word-4 {
+    --color-1: #7e0404;
+    --color-2: #FFBF69;
+    --color-3: #470303;
+   font-weight: 800;
+   font-size: 40px;
+  }
+  
+  @keyframes color-animation {
+    0%    {color: var(--color-1)}
+    32%   {color: var(--color-1)}
+    33%   {color: var(--color-2)}
+    65%   {color: var(--color-2)}
+    66%   {color: var(--color-3)}
+    99%   {color: var(--color-3)}
+    100%  {color: var(--color-1)}
+  }
+  
+
+/* 
+  Animation for background */
+
+
+@keyframes animateBg {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
+}
+
+  
+  
+ 
