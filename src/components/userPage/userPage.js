@@ -52,7 +52,7 @@ const UserContent = ({user, setUser}) => {
                     <img src='./images/Kate.jpg' alt="Kate" />
                     <img src='./images/Weird.jpeg' alt="Weird" />
                     <img src='./images/Skrillex.jpeg' alt="Skrillex" />
-                    <img src='./images/Smurfs.jpeg' alt="Smurfs" />
+                    <img src='./images/yusuf.png' alt="yusuf" />
                     </div>
                      {/* <div className="sugtext"><p>Suggested Albums</p></div> */}
                 </div>
