@@ -26,6 +26,7 @@ const UserCollection = ({user, setUser}) => {
             <img className='images' src='./images/pj.jpg' alt='album cover' />
             <img className='images' src='./images/will.jpg' alt='album cover' />
             </div>
+            <br></br>
             <Link id='link1' to="/userPage">Back to your page</Link>
         </div>
     );
