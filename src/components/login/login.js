@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createUser, login } from "../../utils"; 
 import { Navigate } from "react-router-dom";
 import './login.css';
+import Footer from '../footer/footer.js';
 
 export const Login = ({user, setUser}) => {
   const [username, setUsername] = useState();
@@ -83,6 +84,7 @@ export const Login = ({user, setUser}) => {
 
 
       </div>
+      <Footer/>
     </div>
   )
 };
