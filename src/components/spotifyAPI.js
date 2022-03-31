@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+
 import "./addToList/AddToListPage.css"
+
 
 
 
@@ -9,7 +11,8 @@ import "./addToList/AddToListPage.css"
 const Spotify = () => {
     const CLIENT_ID = "0af314e7a1b2419f91d7cd48e6a05a52";
     // const clientSecret = "1cf3bfcdd3934969afacab8ddaa3a663";
-    const REDIRECT_URI = "http://localhost:3000/"
+
+    const REDIRECT_URI = "http://localhost:3000/addToListPage"
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize"
     const RESPONSE_TYPE = "token"
 
@@ -61,8 +64,10 @@ const Spotify = () => {
 
     const renderAlbums = () => {
         return albums.map(album => (
+
             <div id="albumList" key={album.id}>
                 {album.images.length ? <img id="albumImg" src={album.images[0].url} alt=""/> : <p> No Cover Image </p> }
+
                 {/* Styling Button */}
                     {/* <div id="albumInfo" style={{ paddingBottom: 20 }}>   */}
                     <div id="albumInfo">
@@ -93,7 +98,7 @@ const Spotify = () => {
             // {value: 2, name: 'Search by Playlist'},
         ];
     return (
-        <div>
+        <div className="SpotifyArt">
             <select>
             {dataValue.map( (item, idx) => <option key={idx} value={item.value}> {item.name}</option>)}
             </select>
