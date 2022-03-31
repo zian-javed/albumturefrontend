@@ -1,6 +1,7 @@
 import React from 'react';
 import Spotify from '../spotifyAPI.js';
 import { Link } from "react-router-dom";
+import Footer from '../footer/footer.js';
 import "./AddToListPage.css"
 
 
@@ -23,7 +24,7 @@ const AddToList = () => {
              <Link id='goBack' to="/userPage">Go Back to User Page</Link>
          </p>
         </div>
-
+            <Footer />
        </>
     );
 };

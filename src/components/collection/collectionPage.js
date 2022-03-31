@@ -3,6 +3,7 @@ import { Navigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import NavBar from '../navbar/navBar.js';
 import './collectionPage.css';
+import Footer from '../footer/footer.js';
 
 
 const UserCollection = ({user, setUser}) => {
@@ -11,7 +12,7 @@ const UserCollection = ({user, setUser}) => {
         <div className='collection'>
             {!user && <Navigate to="/" />}
             <NavBar user={user} setUser={setUser} />
-            <h1> My albums </h1>
+            <h1> My Album Collection </h1>
             <div className='imageContainer'>
             <img className='images' src='./images/red.jpg' alt='album cover' />
             <img className='images' src='./images/6993.jpg' alt='album cover' />
@@ -28,6 +29,12 @@ const UserCollection = ({user, setUser}) => {
             </div>
             <br></br>
             <Link id='link1' to="/userPage">Back to your page</Link>
+            <div>
+           
+            </div>
+            <br></br>
+            <br></br>
+            <Footer/>
         </div>
     );
 };

@@ -1,6 +1,7 @@
 import React from 'react';
 import NavBar from '../navbar/navBar.js';
 import { Link } from "react-router-dom";
+import Footer from '../footer/footer.js';
 
 import './userPage.css';
 
@@ -29,7 +30,7 @@ const UserContent = ({user, setUser}) => {
                     <span className="title-word title-word-4">{user}</span>
                 </p>
                 {/* <p className='texta'> Welcome, friend! {user} </p> */}
-                <p className="textb">Click bellow to search for new music</p>
+                <p className="textb">Click below to search for new music</p>
                 <Link id='link1' to="/addToListPage">Search for Albums</Link>
              
                 {/* <img src='./images/6a.png' alt="cool" /> */}
@@ -56,6 +57,7 @@ const UserContent = ({user, setUser}) => {
                     </div>
                      {/* <div className="sugtext"><p>Suggested Albums</p></div> */}
                 </div>
+                <Footer />
     </div>
 
 

@@ -9,11 +9,11 @@ export const Login = ({user, setUser}) => {
   const [email, setEmail] = useState();
   const [pass, setPass] = useState();
   const [bool, setBool] = useState(false);
-  const [name, setName] = useState("Let's create an account");
+  const [name, setName] = useState("Let's Create An Account");
   
   const handleClick = (e) => {
     e.preventDefault();
-    setName("Let's get you logged in.");
+    setName("Let's Get You Logged In.");
     setBool(!bool)
   }
 
@@ -70,7 +70,7 @@ export const Login = ({user, setUser}) => {
           <br></br>
           <br></br>
           <br></br>
-          <button className="logB" type="submit">{!bool ? " Press to create account " : "Login"} </button>
+          <button className="logB" type="submit">{!bool ? " Press to Create Account " : "Login"} </button>
           <br></br>
           <br></br>
           <br></br>
