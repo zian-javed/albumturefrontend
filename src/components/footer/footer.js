@@ -7,13 +7,13 @@ const Footer = () => {
 <footer>
     <div className="footer-spotify">   
     <div className="spotify">
-        <h3 className="footer-title">Designed and Built by Desk 4</h3>
-        <h3 className="footer-title2">Powered By Spotify</h3>
+        <p className="footer-title">Designed and Built by Desk 4</p>
+        <p className="footer-title2">Powered By Spotify</p>
     </div>
     <a id="link-to-spotify" href="https://www.spotify.com/uk/"> <img src="./images/spotifylogo.png" alt="Spotify logo"/></a>
     </div>
     <div className="github">
-    <h3 id="link-to-team-githubs">If you like this site you can see more of our work on GitHub</h3>
+    <p id="link-to-team-githubs">If you like this site you can see more of our work on GitHub</p>
     <ul className="footer-list">
         <li className="footer-item">
             <a href="https://github.com/APerezBanks"> <img src="./images/awesome_Alex.jpeg" alt="Link to Alex Perez Banks GitHub profile"/> </a>
