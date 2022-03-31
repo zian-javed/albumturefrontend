@@ -4,6 +4,7 @@ import { useState } from 'react';
 import NavBar from '../navbar/navBar.js';
 import { updatePass } from "../../utils";
 import { Navigate } from "react-router-dom";
+import Footer from '../footer/footer.js';
 
 const Profile = ({user, setUser}) => {
     const [editMode, setEditMode] = useState(false);
@@ -43,8 +44,10 @@ const Profile = ({user, setUser}) => {
                             </div>
                         </>
                     } 
-                </div>   
-            </div>         
+                </div>
+               
+            </div>
+         <Footer/>         
         </div>
     );
 }

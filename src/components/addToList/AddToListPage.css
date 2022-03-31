@@ -35,6 +35,7 @@ a{
     /* border: black 1px solid; */
     width: 100%;
     display: flex;
+    margin-bottom: 2px;
 }
 
 #albumInfo {
@@ -43,10 +44,12 @@ a{
     /* border-radius: 5px; */
     width: 100%;
     height: 100%;
-    background-color: #d6cfcbc7;
+    background-color: #457b9dc1;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    border-radius: 5px;
+   
 }
 
 #where{
