@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+/* font-family: 'Space Grotesk', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+    background-color: #D6CFCB;
+    font-family: 'Poppins', sans-serif;
+}
+
+.imageContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.images {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+}
+
+#link1 { 
+    text-decoration: none;
+    color: black;
+    border-radius: 3px;
+    padding: 10px 30px;
+    background-color:#FFBF69;
+
+    box-shadow: 1px 2px #181818;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+
+ } 
+
+#link1:hover {
+    padding: 10px 30px;
+    color: white;
+    background-color: #7e0404;
+}
