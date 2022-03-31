@@ -88,4 +88,3 @@ export const Login = ({user, setUser}) => {
     </div>
   )
 };
-
