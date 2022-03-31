@@ -65,52 +65,6 @@ background-color:#D6CFCB;
         font-family: 'Poppins', sans-serif;
     }
 
-   
-    /* .logB { */
-        /* display: flex; */
-        /* display: inline-block;
-        background-color: #706677;
-       
-        color: white;
-        border-radius: 12px;
-        border: none;
-        width: 150px;
-        height: 100px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;  
-    }
-
-    .logB:hover{
-        background-color: #A6808C;
-         */
-
-    /* } */
-
-    /* .logV { */
-        /* display: flex; */
-        /* display: inline-block;
-        background-color: #A6808C;
-        font-family: 'Poppins', sans-serif;
-        color: white;
-        border-radius: 12px;
-        border: none;
-        width: 100px;
-        height: 70px;
-        text-align: center;
-        text-decoration: none;
-        font-size: 16px;  
-    }
-
-    .logV:hover{
-        background-color: #706677;
-        
-
-    } 
-
-
-    /* button animation bellow */ 
-
     .logV {
         display: inline-block;
         padding: .75rem 1.25rem;

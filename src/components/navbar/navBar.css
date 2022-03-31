@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-
 .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    /* border: black 1px solid; */
-    background: rgb(214,207,203);
-    background: linear-gradient(17deg, rgba(214,207,203,1) 28%, rgba(214,213,202,1) 100%);
+    /* border: black 1px solid;
+    background: rgb(214,207,203); */
+    /* background: linear-gradient(17deg, rgba(214,207,203,1) 28%, rgba(214,213,202,1) 100%); */
+    /* background-color: #FFCDB2; */
+    background-color: #565264;
+    
 }
 
 ul {
@@ -28,12 +30,14 @@ ul {
 
 
 .link1 {
-    /* border: rgb(182, 181, 181) 1px solid; */
+    color: black;
+    border: rgb(0, 0, 0) 1px solid;
     margin-bottom: 10px;
     border-radius: 5px;
     height: 25px;
     width: 120px;
-    background-color: #565264;
+    background-color: #FFBF69;
+    /* background-color: #565264; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,13 +48,14 @@ ul {
 .link1:hover {
     padding: 0px 5px 0px 0px;
     /* color: var(--text-light); */
-    background-color: #706677;
+    background-color: #f9486c;
     font-weight: 600;
     transition:250ms;
+    color: white;
 }
 
 #link2 {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 12px;
 }
@@ -68,16 +73,18 @@ ul {
 }
 
 #logoutButton {
-    background-color: #565264;
+    /* background-color: #565264; */
+    background-color: #FFBF69;
     font-size: 12px;
-    height: 25px;
-    width: 100px;
+    height: 35px;
+    width: 150px;
     border-radius: 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
 #logoutButton:hover {
-    background-color: #706677;
+    background-color: #f9486c;
     font-weight: 600;
+    color:white;
 }
