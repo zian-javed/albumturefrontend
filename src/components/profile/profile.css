@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&display=swap');
+/* font-family: 'Space Grotesk', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400&display=swap');
+/* font-family: 'IBM Plex Sans', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+.profilepage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.profileContainer{
+    display: flex;
+    width: 100%;
+    height: 85%;
+    background-color:#D6CFCB;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.profileImage{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.profileInfo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileInfo input{
+    border:none ;
+    box-shadow: 10px 10px 2px #706677;
+    background-color: #FFBF69;
+    font-size:40px;
+}
+
+.label{
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn{
+display: inline-block;
+padding: .75rem 1.25rem;
+border-radius: 10rem;
+color:white;
+background-color: #A6808C;
+text-transform: uppercase;
+font-size: 1rem;
+letter-spacing: .15rem;
+transition: all .3s;
+position: relative;
+overflow: hidden;
+z-index: 1;
+}
+
+.btn:hover{
+    background-color: #706677;
+}
