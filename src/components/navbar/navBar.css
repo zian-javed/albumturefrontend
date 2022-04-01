@@ -31,7 +31,7 @@ ul {
 
 .link1 {
     color: black;
-    border: rgb(0, 0, 0) 1px solid;
+  
     margin-bottom: 10px;
     border-radius: 5px;
     height: 25px;
@@ -43,10 +43,11 @@ ul {
     align-items: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
+   
 }
 
 .link1:hover {
-    padding: 0px 5px 0px 0px;
+    padding-right: 10px;
     /* color: var(--text-light); */
     background-color: #f9486c;
     font-weight: 600;
@@ -61,15 +62,17 @@ ul {
 }
 
 #leftCol {
-    /* border: black 1px solid; */
-    width: 150px;
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
 }
 #middleCol {
     /* border: black 1px solid; */
+    width: 33.33%;
 }
 #lastCol {
     /* border: black 1px solid; */
-
+    width: 33.33%;
 }
 
 #logoutButton {
