@@ -69,7 +69,29 @@ a{
     width: 100%;
 }
 
+.buttons{
+    /* border: black 1px solid; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 #addButton {
+    box-shadow: 2px 3px 2px #706677;
+    background-color: #FFBF69;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size:15px;
+    height: 30px;
+    width: 150px;
+  margin-right: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#spotifyButton{
     box-shadow: 2px 3px 2px #706677;
     background-color: #FFBF69;
     border-radius: 5px;
@@ -81,7 +103,9 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
+
 .loginButton {
     
     color: black;
@@ -153,6 +177,7 @@ a{
     font-size:15px;
     height: 30px;
     width: 150px;
+    border: none;
 }
 
 

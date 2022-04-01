@@ -72,9 +72,12 @@ const Spotify = () => {
                     {/* <div id="albumInfo" style={{ paddingBottom: 20 }}>   */}
                     <div id="albumInfo">
                          <p><span id="releaseDate">Album Title:</span> {album.name} </p>
-                         {/* <a style={{ color: "black" }} href={album.external_urls.spotify} target="_blank" rel="noreferrer">Open in Spotify</a> */}
+
                          <p> <span id="releaseDate">Release Date:</span> {album.release_date} </p>
-                         <p id="addButton">Add to Collection </p>
+                         <div className="buttons">
+                            <p id="addButton">Add to Collection </p>
+                            <a id="spotifyButton" href={album.external_urls.spotify} target="_blank" rel="noreferrer">Play on Spotify</a>
+                        </div>
                     </div>
 
                          
