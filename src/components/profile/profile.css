@@ -8,6 +8,7 @@
 .profilepage{
     width: 100vw;
     height: 100vh;
+    
 }
 
 .profileContainer{
@@ -23,19 +24,21 @@
 
 .profileImage{
     width: 50%;
-    height: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
+   
 }
 
 .profileInfo{
     width: 50%;
-    height: 100%;
+    height: 90%;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* border: red 1px solid; */
 }
 
 .profileInfo input{
@@ -43,16 +46,18 @@
     box-shadow: 10px 10px 2px #706677;
     background-color: #FFBF69;
     font-size:40px;
+    
 }
 
 .label{
     font-family: 'Poppins', sans-serif;
+    
 }
 
 .btn{
 display: inline-block;
 padding: .75rem 1.25rem;
-border-radius: 10rem;
+border-radius: 1rem;
 color:white;
 background-color: #A6808C;
 text-transform: uppercase;
@@ -62,8 +67,32 @@ transition: all .3s;
 position: relative;
 overflow: hidden;
 z-index: 1;
+
 }
 
 .btn:hover{
     background-color: #706677;
+}
+
+.userProfile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* border: red 1px solid; */
+    width: 70%;
+    height: 100%;
+    justify-content: space-evenly;
+}
+
+.userDetail{
+    margin-bottom: 40px;
+    font-size: 16px;
+    border-bottom: #7066773a 1px solid;
+    width: 100%;
+    display: flex;
+}
+
+#bold{
+    font-weight: 700;
+    letter-spacing: 2px;
 }
